@@ -52,7 +52,7 @@ public class FocusCalculator {
         return totalFocusingPower;
     }
 
-    public static int hashFunction(String input) {
+    private int hashFunction(String input) {
         int hashValue = 0;
         for (char c : input.toCharArray()) {
             hashValue += c;
