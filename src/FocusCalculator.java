@@ -6,7 +6,6 @@ import java.util.Map;
 public class FocusCalculator {
 
     public long calculateFocus(String[] instructions) {
-
         Map<Integer, List<Lens>> boxes = new HashMap<>();
 
         for (String instruction : instructions) {
@@ -50,7 +49,6 @@ public class FocusCalculator {
                 totalFocusingPower += (long) boxId * (i + 1) * lens.focalLength;
             }
         }
-
         return totalFocusingPower;
     }
 
